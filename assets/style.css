@@ -3,8 +3,8 @@
   --page-x: 208px;
   --gap: 16px;
 
-  --yellow: #FFB30E;
-  --orange: #F17228;
+  --yellow: #ffb30e;
+  --orange: #f17228;
   --orange-soft: #fde3d3;
   --green: #7db52d;
   --green-soft: #e4f2d4;
@@ -213,7 +213,7 @@ input {
   font-size: 20px;
 }
 .header__location i {
-  color: #FFB30E;
+  color: #ffb30e;
 }
 .header__location strong {
   font-weight: 700;
@@ -233,7 +233,7 @@ input {
   color: #222;
 }
 .header__search i {
-  color: #FFB30E;
+  color: #ffb30e;
 }
 .header__login {
   display: flex;
@@ -243,8 +243,7 @@ input {
   padding-inline: 24px;
   background: #fff;
   border-radius: 8px;
-  color: #FF8A00;
-;
+  color: #ff8a00;
   font-size: 18px;
   font-weight: 700;
   box-shadow: 0 10px 30px rgba(255, 184, 0, 0.25);
