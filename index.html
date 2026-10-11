@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foodwagon – Order food near you</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="logo" aria-label="Foodwagon">
+          <img
+            src="assets/images/logo.svg"
+            alt="Foodwagon"
+            width="197"
+            height="36"
+          />
+        </a>
+
+        <p class="header__location">
+          <strong class="header__label">Deliver to:</strong>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Current Location</span>
+          <strong>Mohammadpur Bus Stand, Dhaka</strong>
+        </p>
+
+        <nav class="header__nav" aria-label="Main">
+          <a href="#" class="header__search"
+            ><i class="fa-solid fa-magnifying-glass"></i> Search Food</a
+          >
+          <a href="#" class="header__login"
+            ><i class="fa-solid fa-user"></i> Login</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 id="hero-title" class="hero__title">Are you starving?</h1>
+            <p class="hero__subtitle">
+              Within a few clicks, find meals that are accessible near you
+            </p>
+
+            <div class="search-box">
+              <div class="search-box__tabs" role="tablist">
+                <button class="tab tab--active" role="tab" aria-selected="true">
+                  <i class="fa-solid fa-motorcycle"></i> Delivery
+                </button>
+                <button class="tab" role="tab" aria-selected="false">
+                  <i class="fa-solid fa-bag-shopping"></i> Pickup
+                </button>
+              </div>
+              <form class="search-box__form" action="#">
+                <label class="input">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input type="text" placeholder="Enter Your Address" />
+                </label>
+                <button type="submit" class="btn btn--coral">
+                  <i class="fa-solid fa-magnifying-glass"></i> Find Food
+                </button>
+              </form>
+            </div>
+          </div>
+          <img
+            class="hero__img"
+            src="assets/images/8230131c50f47f76753ee038bd196d880d9316f8.png"
+            alt="Bowl of noodles"
+          />
+        </div>
+      </section>
+
+      <section class="section offers" aria-label="Current offers">
+        <div class="container">
+          <ul class="grid grid--4">
+            <li class="offer">
+              <div class="offer__media">
+                <img src="assets/images/offer-1.svg" alt="Green salad bowl" />
+                <span class="offer__badge"
+                  ><b>15</b><sup>%<small>Off</small></sup></span
+                >
+              </div>
+              <h3 class="offer__name">Greys Vage</h3>
+              <span class="chip chip--orange">6 Days Remaining</span>
+            </li>
+            <li class="offer">
+              <div class="offer__media">
+                <img src="assets/images/offer-2.svg" alt="Pesto pasta" />
+                <span class="offer__badge"
+                  ><b>10</b><sup>%<small>Off</small></sup></span
+                >
+              </div>
+              <h3 class="offer__name">Greys Vage</h3>
+              <span class="chip chip--orange">6 Days Remaining</span>
+            </li>
+            <li class="offer">
+              <div class="offer__media">
+                <img src="assets/images/offer-3.svg" alt="Veggie bowl" />
+                <span class="offer__badge"
+                  ><b>25</b><sup>%<small>Off</small></sup></span
+                >
+              </div>
+              <h3 class="offer__name">Greys Vage</h3>
+              <span class="chip chip--orange">7 Days Remaining</span>
+            </li>
+            <li class="offer">
+              <div class="offer__media">
+                <img src="assets/images/offer-4.svg" alt="Red curry" />
+                <span class="offer__badge"
+                  ><b>20</b><sup>%<small>Off</small></sup></span
+                >
+              </div>
+              <h3 class="offer__name">Greys Vage</h3>
+              <span class="chip chip--orange">8 Days Remaining</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section how" aria-labelledby="how-title">
+        <div class="container">
+          <h2 id="how-title" class="how__title">How does it work</h2>
+          <ul class="how__steps">
+            <li class="step">
+              <img src="assets/images/step-1.svg" alt="" />
+              <h3>Select location</h3>
+              <p>Choose the location where your food will be delivered.</p>
+            </li>
+            <li class="step">
+              <img src="assets/images/step-2.svg" alt="" />
+              <h3>Choose order</h3>
+              <p>Check over hundreds of menus to pick your favorite food</p>
+            </li>
+            <li class="step">
+              <img src="assets/images/step-3.svg" alt="" />
+              <h3>Pay advanced</h3>
+              <p>
+                It's quick, safe, and simple. Select several methods of payment
+              </p>
+            </li>
+            <li class="step">
+              <img src="assets/images/step-4.svg" alt="" />
+              <h3>Enjoy meals</h3>
+              <p>Food is made and delivered directly to your home.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section popular" aria-labelledby="popular-title">
+        <div class="container">
+          <h2 id="popular-title" class="section__title">Popular items</h2>
+          <ul class="grid grid--5">
+            <li class="item">
+              <img src="assets/images/popular-1.svg" alt="Cheese Burger" />
+              <h3 class="item__name">Cheese Burger</h3>
+              <p class="item__shop">
+                <i class="fa-solid fa-location-dot"></i> Burger Arena
+              </p>
+              <p class="item__price">$3.88</p>
+              <a href="#" class="btn btn--orange">Order Now</a>
+            </li>
+            <li class="item">
+              <img src="assets/images/popular-2.svg" alt="Toffe's Cake" />
+              <h3 class="item__name">Toffe’s Cake</h3>
+              <p class="item__shop">
+                <i class="fa-solid fa-location-dot"></i> Top Sticks
+              </p>
+              <p class="item__price">$4.00</p>
+              <a href="#" class="btn btn--orange">Order Now</a>
+            </li>
+            <li class="item">
+              <img src="assets/images/popular-3.svg" alt="Dancake" />
+              <h3 class="item__name">Dancake</h3>
+              <p class="item__shop">
+                <i class="fa-solid fa-location-dot"></i> Cake World
+              </p>
+              <p class="item__price">$1.99</p>
+              <a href="#" class="btn btn--orange">Order Now</a>
+            </li>
+            <li class="item">
+              <img src="assets/images/popular-4.svg" alt="Crispy Sandwitch" />
+              <h3 class="item__name">Crispy Sandwitch</h3>
+              <p class="item__shop">
+                <i class="fa-solid fa-location-dot"></i> Fastfood Dine
+              </p>
+              <p class="item__price">$3.00</p>
+              <a href="#" class="btn btn--orange">Order Now</a>
+            </li>
+            <li class="item">
+              <img src="assets/images/popular-5.svg" alt="Thai Soup" />
+              <h3 class="item__name">Thai Soup</h3>
+              <p class="item__shop">
+                <i class="fa-solid fa-location-dot"></i> Foody man
+              </p>
+              <p class="item__price">$2.79</p>
+              <a href="#" class="btn btn--orange">Order Now</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section featured" aria-labelledby="featured-title">
+        <div class="container">
+          <h2 id="featured-title" class="section__title">
+            Featured Restaurants
+          </h2>
+
+          <ul class="grid grid--4 featured__grid">
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-1.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 20% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-1.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Foodworld</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 46</p>
+                </div>
+              </div>
+              <span class="chip chip--orange">Opens tomorrow</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-2.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 15% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-2.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Pizzahub</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 40</p>
+                </div>
+              </div>
+              <span class="chip chip--orange">Opens tomorrow</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-3.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 10% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-3.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Donuts hut</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 20</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-4.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 15% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-4.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Donuts hut</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 50</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-5.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 10% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-5.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Ruby Tuesday</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 26</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-6.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 25% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-6.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Kuakata Fried Chicken</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 53</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-7.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 10% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-7.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Red Square</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 45</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+            <li class="rest">
+              <div class="rest__media">
+                <img src="assets/images/rest-8.svg" alt="" />
+                <div class="rest__tags">
+                  <span class="tag tag--discount"
+                    ><i class="fa-solid fa-tag"></i> 10% off</span
+                  >
+                  <span class="tag tag--fast"
+                    ><i class="fa-solid fa-clock"></i> Fast</span
+                  >
+                </div>
+              </div>
+              <div class="rest__info">
+                <img
+                  class="rest__logo"
+                  src="assets/images/rest-logo-8.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="rest__name">Taco Bell</h3>
+                  <p class="rest__rate"><i class="fa-solid fa-star"></i> 35</p>
+                </div>
+              </div>
+              <span class="chip chip--green">Open Now</span>
+            </li>
+          </ul>
+
+          <div class="center">
+            <a href="#" class="btn btn--yellow btn--sm"
+              >View All <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-food" aria-labelledby="food-title">
+        <div class="container">
+          <div class="search-food__head">
+            <h2 id="food-title" class="section__title section__title--left">
+              Search by Food
+            </h2>
+            <div class="search-food__controls">
+              <a href="#" class="link-sm"
+                >View All <i class="fa-solid fa-chevron-right"></i
+              ></a>
+              <button class="arrow" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="arrow" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="search-food__list">
+            <li>
+              <img src="assets/images/food-1.svg" alt="" /><span>Pizza</span>
+            </li>
+            <li>
+              <img src="assets/images/food-2.svg" alt="" /><span>Burger</span>
+            </li>
+            <li>
+              <img src="assets/images/food-3.svg" alt="" /><span>Noodles</span>
+            </li>
+            <li>
+              <img src="assets/images/food-4.svg" alt="" /><span
+                >Sub-sandiwch</span
+              >
+            </li>
+            <li>
+              <img src="assets/images/food-5.svg" alt="" /><span>Chowmein</span>
+            </li>
+            <li>
+              <img src="assets/images/food-6.svg" alt="" /><span>Steak</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Why Foodwagon">
+        <ul class="features__card">
+          <li>
+            <img src="assets/images/feature-1.svg" alt="" /><span
+              >Daily<br />Discounts</span
+            >
+          </li>
+          <li>
+            <img src="assets/images/feature-2.svg" alt="" /><span
+              >Live<br />Tracing</span
+            >
+          </li>
+          <li>
+            <img src="assets/images/feature-3.svg" alt="" /><span
+              >Quick<br />Delivery</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="banners">
+        <div class="container banners__list">
+          <article class="banner">
+            <div class="banner__text">
+              <h2>Best deals <span>Crispy Sandwiches</span></h2>
+              <p>
+                Enjoy the large size of sandwiches. Complete perfect slice of
+                sandwiches.
+              </p>
+              <a href="#" class="btn btn--yellow btn--upper"
+                >Proceed to order <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <img
+              class="banner__img"
+              src="assets/images/banner-1.svg"
+              alt="Crispy sandwiches"
+            />
+          </article>
+
+          <article class="banner banner--reverse">
+            <div class="banner__text">
+              <h2>Celebrate parties with <span>Fried Chicken</span></h2>
+              <p>
+                Get the best fried chicken smeared with a lip smacking lemon
+                chili flavor. Check out best deals for fried chicken.
+              </p>
+              <a href="#" class="btn btn--yellow"
+                >Proceed to order <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <img
+              class="banner__img"
+              src="assets/images/banner-2.svg"
+              alt="Fried chicken platter"
+            />
+          </article>
+
+          <article class="banner">
+            <div class="banner__text">
+              <h2>Wanna eat hot &amp; spicy <span>Pizza?</span></h2>
+              <p>
+                Pair up with a friend and enjoy the hot and crispy pizza pops.
+                Try it with the best deals.
+              </p>
+              <a href="#" class="btn btn--yellow btn--upper"
+                >Proceed to order <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <img
+              class="banner__img"
+              src="assets/images/banner-3.svg"
+              alt="Spicy pizza"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="cta__content">
+          <h2 id="cta-title">Are you ready to order with the best deals?</h2>
+          <a href="#" class="btn btn--orange btn--upper btn--cta"
+            >Proceed to order <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__cities">
+          <h3 class="footer__title">Our top cities</h3>
+          <div class="footer__cities-grid">
+            <ul>
+              <li><a href="#">San Francisco</a></li>
+              <li><a href="#">Miami</a></li>
+              <li><a href="#">San Diego</a></li>
+              <li><a href="#">East Bay</a></li>
+              <li><a href="#">Long Beach</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Los Angeles</a></li>
+              <li><a href="#">Washington DC</a></li>
+              <li><a href="#">Seattle</a></li>
+              <li><a href="#">Portland</a></li>
+              <li><a href="#">Nashville</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">New York City</a></li>
+              <li><a href="#">Orange County</a></li>
+              <li><a href="#">Atlanta</a></li>
+              <li><a href="#">Charlotte</a></li>
+              <li><a href="#">Denver</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Chicago</a></li>
+              <li><a href="#">Phoenix</a></li>
+              <li><a href="#">Las Vegas</a></li>
+              <li><a href="#">Sacramento</a></li>
+              <li><a href="#">Oklahoma City</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Columbus</a></li>
+              <li><a href="#">New Mexico</a></li>
+              <li><a href="#">Albuquerque</a></li>
+              <li><a href="#">Sacramento</a></li>
+              <li><a href="#">New Orleans</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__main">
+          <div class="footer__links">
+            <div>
+              <h3 class="footer__title">Company</h3>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__title">Contact</h3>
+              <ul>
+                <li><a href="#">Help &amp; Support</a></li>
+                <li><a href="#">Partner with us</a></li>
+                <li><a href="#">Ride with us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__title">Legal</h3>
+              <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Refund &amp; Cancellation</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__follow">
+            <h3 class="footer__follow-title">Follow us</h3>
+            <div class="footer__social">
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <p class="footer__offer">
+              Receive exclusive offers in your mailbox
+            </p>
+            <form class="footer__form" action="#">
+              <label class="input input--dark">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter Your email" />
+              </label>
+              <button type="submit" class="btn btn--yellow btn--subscribe">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            All rights Reserved <i class="fa-regular fa-copyright"></i>
+            <strong>Your Company, 2021</strong>
+          </p>
+          <p>
+            Made with <i class="fa-solid fa-heart"></i> by
+            <strong>Themewagon</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
